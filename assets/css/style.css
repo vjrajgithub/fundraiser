@@ -1,0 +1,474 @@
+@charset "utf-8";
+/*--------------------------------------------------------------------------
+							     Typography
+---------------------------------------------------------------------------*/
+body {color:#111111; font-size:16px; line-height: 1.6; font-family: 'Myriad Pro Regular'; background:#f1f1f1;}
+ 
+/*----------- Heading -----------*/
+h1,h2,h3,h4,h5,h6 {margin:0px 0px 10px 0px; color:#000000;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {text-decoration:none;}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {text-decoration:underline;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1em;}
+h6 {font-size: 0.8em;}
+
+/*----------- Links -----------*/
+a {color:#187eba; text-decoration:none;}
+a,a:focus, a:hover, a:active {outline:0 !important;}
+a:focus {text-decoration: none;}
+a:hover {color:#0f6ea6; text-decoration:none;} 
+a:hover,a:focus{text-decoration:none; outline:none;}
+ 
+/*----------- Lists -----------*/
+ul {list-style:none;}
+ul, ol {margin:0; padding:0;}
+li ul, li ol {padding:0; margin:0;}
+
+/*----------- Paragraph -----------*/
+p {font-size:16px; line-height:24px; margin-bottom:10px;}
+p img.left {float:left; margin:1.5em 1.5em 1.5em 0; padding:0;}
+p img.right {float:right; margin:1.5em 1.5em 1.5em 0;}
+strong {font-weight:bold; }
+em, dfn {font-style:italic; }
+dfn {font-weight:600;}
+sup{line-height:0; vertical-align:super; font-size:smaller;}
+sub {line-height:0; vertical-align:sub; font-size:smaller;}
+abbr, acronym {border-bottom:1px dashed #ccc; }
+address {margin:0 0 1.5em; font-style:italic; }
+del {color:#666;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5em; display:block; }
+code {background-color:#eee; display:inline; padding:0px 2px 1px 2px; line-height:1.1em; }
+pre {margin:1.5em 0; white-space:pre; }
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+.hide { display:none}
+.block { display:block !important;}
+.inline { display:inline !important;}
+.bold { font-weight:600;}
+.italic { font-style:italic;}
+.uppercase{text-transform:uppercase;}
+
+/*----------- Flot And Alignment -----------*/
+.fl {float:left;}
+.fr {float:right !important;}
+.ac {text-align:center;}
+.ar {text-align:right;}
+.al {text-align:left;}
+
+/*----------- Color, Text And Border -----------*/
+.blue{color:#0025a0 !important;}
+.green{color:#6eab00 !important;}
+.light-blue{color:#275dff !important;}
+.orange{color:#e47e05 !important;}
+.gray{color:#949494 !important;}
+
+.gray-bg{background:#f0f0f0 !important;}
+.bdr_none{border:none !important;}
+.bdr-btm{border-bottom:1px solid #dddddd;}
+
+.btn-orange{background:#f5a409 !important; height:60px; line-height:40px; color:#ffffff !important; min-width:150px; font-size:20px; font-weight:bold; text-shadow:1px 1px 2px rgba(0,0,0,0.3);}
+
+/*----------- Background -----------*/
+.bg-white{background:#ffffff;}
+
+/*----------- Margin -----------*/
+.mr_none {margin:0px !important;}
+.mr_b5,.mr_b10,.mr_b15,.mr_b20,.mr_b25,.mr_b30,.mr_b35,.mr_b40,.mr_b45,.mr_b50,.mr_b55,.mr_b60 {clear:both;}
+
+.mr_b5 {margin-bottom:5px;}
+.mr_b10 {margin-bottom:10px;}
+.mr_b15 {margin-bottom:15px;}
+.mr_b20 {margin-bottom:20px;}
+.mr_b25 {margin-bottom:25px;}
+.mr_b30 {margin-bottom:30px;}
+.mr_b35 {margin-bottom:35px;}
+.mr_b40 {margin-bottom:40px;}
+.mr_b45 {margin-bottom:45px;}
+.mr_b50 {margin-bottom:50px;}
+.mr_b55 {margin-bottom:55px;}
+.mr_b60 {margin-bottom:60px;}
+.mr_auto{margin:0 auto;}
+
+/*----------- Padding -----------*/ 
+.pd_none {padding:0px !important;}
+.pd-top10{padding-top:10px;}
+
+/*----------- Fonts -----------*/
+.ft6{font-size:6px;}
+.ft7{font-size:7px;}
+.ft8{font-size:8px;}
+.ft9{font-size:9px;}
+.ft10{font-size:10px;}
+.ft11{font-size:11px;}
+.ft12{font-size:12px;}
+.ft13{font-size:13px;}
+.ft14{font-size:14px;}
+.ft15{font-size:15px;}
+.ft16{font-size:16px;}
+.ft17{font-size:17px;}
+.ft18{font-size:18px;}
+.ft19{font-size:19px;}
+.ft20{font-size:20px;}
+ 
+/*----------- Font Face Generator -----------*/
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+@font-face {
+font-family: 'Myriad Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+/*--------------------------------------------------------------------------
+							     Index Page
+--------------------------------------------------------------------------*/ 
+
+/*----------- Header -----------*/
+header{border-bottom:1px solid rgba(0,0,0,0.13); background:#f1f1f1; box-shadow:0px 2px 12px rgba(0,0,0,0.5); padding:10px 0px; margin-bottom:10px;}
+header .navbar{margin:0; background-color:#f1f1f1; border:none;}
+header .navbar .navbar-nav > li{margin-left:5px;}
+header .navbar .navbar-nav > li > a{color:#222222; font-size:16px; padding-top:6px; padding-bottom:6px;}
+header .navbar .navbar-nav > li > a:hover{color:#1cc3c9;}
+header .navbar .navbar-nav > li > a.btn.btn-primary{background:#6fc8e6; border-color:#6fc8e6; color:#222222;}
+header .navbar .navbar-nav > li form{margin-top:2px;}
+header .navbar .navbar-nav.navbar-right{margin-top:6px;}
+header .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{margin-top:-18px;}
+header .nav.navbar-nav.navbar-right div{display:inline-table;}
+
+/*----------- Main Content -----------*/
+#main-content .sidebar .signup-btn{margin:50px 0px 20px 0px;}
+#main-content .sidebar .signup-btn .btn.btn-primary{background:#6fc8e6; width:100%; font-weight:bold; border-color:#6fc8e6;}
+#main-content .sidebar .all-categories{padding:15px}
+#main-content .sidebar .all-categories .title h3{text-transform:uppercase; margin-bottom:15px;}
+#main-content .sidebar .all-categories ul li{margin-bottom:5px; padding-bottom:5px; display:block;}
+#main-content .sidebar .all-categories ul li a{font-size:16px; color:#000000; display:block;}
+#main-content .sidebar .all-categories ul li a i.img img{width:16px; height:16px;}
+#main-content .sidebar .all-categories ul li a:hover{color:#6fc8e6; font-weight:bold;}
+#main-content .content-area{background:#f8fbf9; padding:15px;}
+#main-content .top-blank{background:#fffff; margin-bottom:20px;} 
+#main-content .product-list .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{background:none; border-top:0; border-left:0; border-right:0; border-boSttom:4px solid #6fc8e6; color:#6fc8e6; font-size:20px; font-weight:bold;}
+#main-content .product-list .nav-tabs > li > a{text-align:center; width:200px; color:#000000; font-size:20px; border-bottom:0px solid #f8fbf9;}
+#main-content .product-list .tab-content{padding-top:15px;}
+/*Products*/
+#main-content .product-list .product-area{background:url(../images/img1_bg.jpg) no-repeat; border:1px solid #c9c9c9; background-size:100%; margin:8px 0px;}
+#main-content .product-list .product-area.bg2{background:url(../images/img2_bg.jpg) no-repeat;}
+#main-content .product-list .product-area.bg3{background:url(../images/img3_bg.jpg) no-repeat;}
+#main-content .product-list .product-area .product-image{padding:7px;}
+#main-content .product-list .product-area .product-content .price{padding:5px 10px; text-align:center;}
+#main-content .product-list .product-area .product-content .price h2{font-weight:bold; color:#000000; font-size:30px;}
+#main-content .product-list .product-area .product-content .price h2 span{font-size:18px;}
+#main-content .product-list .product-area .product-content .process{width:80%; height:7px; background:#7fcde7; border-radius:2px;}
+#main-content .product-list .product-area .product-content .name h3{margin:15px 2px; text-align:center; font-size:16px; font-weight:bold; text-align:center; color:#222222;}
+#main-content .product-list .product-area .product-content .map-area{width:100%; display:block; overflow:hidden; padding:10px 12px; border-top:1px solid #c9c9c9; color:#222222;}
+#main-content .product-list .product-area .product-content .map-area a{color:#000000;}
+#main-content .product-list .product-area .product-content .map-area .lt-icon{float:left;}
+#main-content .product-list .product-area .product-content .map-area .rt-icon{float:right;}
+#main-content .load-more{padding:25px 0px; text-align:center; font-size:25px;}
+
+/*Footer*/
+footer{margin-top:15px; padding:25px 0px; border-top:1px solid #111111;}
+footer .title h3{color:#6fc8e6; text-transform:uppercase; font-size:23px; margin-bottom:17px;}
+footer .links ul li{display:block;}
+footer .links ul li a{color:#222222; font-size:16px; display:block; margin-bottom:5px; margin-bottom:5px;}
+footer .links ul li a:hover{color:#000000;}
+
+/*--------------------------------------------------------------------------
+							    Campaign Page
+--------------------------------------------------------------------------*/
+#campaign .campaign-inner{padding:20px 10px; background:#ffffff;}
+#campaign .campaign-inner .heading h2{font-size:45px; color:#000000; text-align:center; font-family: 'Myriad Pro Bold'; margin-bottom:30px;}
+#campaign .campaign-inner .campaign-share{width:100%; overflow:hidden; padding:20px 0px;}
+#campaign .campaign-inner .campaign-share .cam-user{float:left;}
+#campaign .campaign-inner .campaign-share .cam-user img{margin-bottom:8px;}
+#campaign .campaign-inner .campaign-share .cam-share{float:right; text-align:center; padding-top:7px;}
+#campaign .campaign-inner .campaign-share .cam-share p{font-size:45px;}
+#campaign .campaign-inner .campaign-share .cam-share p span{font-size:22px; font-weight:normal;}
+#campaign .campaign-inner .campaign-share .cam-share ul li{padding-left:0;}
+#campaign .campaign-inner .campaign-share .cam-share ul li a.fb{width:40px; height:40px; background:#385699; color:#ffffff; text-align:center; font-size:26px;display:block; border-radius:3px;}
+#campaign .campaign-inner .campaign-share .cam-share ul li a.tw{background:#22cbff;}
+#campaign .campaign-inner .donate-section{background:#f1f1f1; border-radius:8px;}
+#campaign .campaign-inner .donate-section .days{background:none; padding:10px 15px; text-align:right; color:#000000; font-size:20px; border-radius:8px;}
+#campaign .campaign-inner .donate-section .thb-sec{padding:2px 10px; display:block;}
+#campaign .campaign-inner .donate-section .thb-sec h3{color:#000000; font-size:60px; color:#000000; font-family: 'Myriad Pro Bold';}
+#campaign .campaign-inner .donate-section .thb-sec h3 span{font-size:24px;}
+#campaign .campaign-inner .donate-section .thb-sec h3 .thb-sm{font-size:14px;font-family: "Myriad Pro Regular";}
+#campaign .campaign-inner .donate-section .donate-now{padding:0px 10px 10px 10px;}
+#campaign .campaign-inner .donate-section .donate-now .donate-button a.btn.btn-primary{background:#5aadc5 url(../images/logo-seul.png) 10px 10px no-repeat; font-size:28px; text-transform:uppercase; color:#514747; border-color:#1cc3c9; font-weight:bold; width:100%; padding:15px 5px 10px 60px; margin-top:25px; text-align:left;}
+#campaign .campaign-inner .donate-section .donate-now .share-button{width:100%;}
+#campaign .campaign-inner .donate-section .donate-now .share-button a{width:110px; height:110px; background:#385699; color:#ffffff; font-size:20px; text-transform:uppercase; text-align:center; border-radius:50%; display:block; font-weight:bold; line-height:24px; padding-top:30px; margin:0 auto;}
+#campaign .campaign-inner .donate-section .donate-now .share-button a i{font-size:27px;}
+#campaign .campaign-inner .donate-section .donate-now .share-button a span{display:block;}
+#campaign .campaign-inner .donate-section .donate-bottom{width:100%; overflow:hidden;}
+#campaign .campaign-inner .donate-section .donate-bottom .don-bot{width:33%; float:left; display:block; padding:12px 10px 12px 10px; box-sizing:border-box; font-size:17px; color:#111111;}
+
+/*Post Content*/
+#campaign .campaign-inner .post-content{border-bottom:1px solid #000000; margin-bottom:40px; padding-bottom:40px;}
+#campaign .campaign-inner .post-content .update-msg{background:#fafafa; border-radius:20px; border-top:1px solid #e6e6e6; border-right:1px solid #e6e6e6; border-left:1px solid #e6e6e6;}
+#campaign .campaign-inner .post-content .update-msg .title{background:#f2f2f2; padding:12px 20px; border-top-right-radius:20px; border-top-left-radius:20px;}
+#campaign .campaign-inner .post-content .update-msg .title h3{font-family: "Myriad Pro Regular"; margin:0; font-size:20px;}
+#campaign .campaign-inner .post-content .update-msg .msg-content{padding:20px;}
+#campaign .campaign-inner .post-content .update-image{margin-top:15px;}
+#campaign .campaign-inner .share-area{width:100%; display:block;}
+#campaign .campaign-inner .share-area .share-lt{float:left; margin-top:12px;}
+#campaign .campaign-inner .share-area .share-rt{float:right;}
+#campaign .campaign-inner .share-area .share-rt ul li a{color:#000000; font-size:30px;}
+
+/*They Donate*/
+#campaign .campaign-inner .they-donate .donate-list{background:#fafafa; border-top:1px solid #dddddd; border-right:1px solid #dddddd; border-left:1px solid #dddddd; border-radius:5px; margin-bottom:20px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-time{background:#f2f2f2; border-top-right-radius:5px; border-top-left-radius:5px; text-align:center; padding:10px; font-size:20px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-name{padding-top:10px; text-align:center; background:url(../images/check.png) left top no-repeat; padding-left:10px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-name span{font-size:30px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-name h3{font-size:50px; font-family: 'Myriad Pro Bold'; color:#0bbd89; margin-bottom:0px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-name h3 span{font-size:22px;}
+#campaign .campaign-inner .they-donate .donate-list .donate-content{padding:15px;}
+#campaign .campaign-inner .campaign-comment{margin-top:15px; padding-top:10px; border-top:1px solid #000000;}
+#campaign .campaign-inner .campaign-comment .wall-posted{text-align:center; padding:30px 0px; font-size:13px;}
+#campaign .campaign-inner .campaign-comment .fb-login h3{font-family: 'Myriad Pro Bold';}
+#campaign .campaign-inner .campaign-comment .comment-area{margin:30px 0px; padding:0 50px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-title h2{color:#66666f; font-size:30px; padding-bottom:15px; border-bottom:1px solid #d6d6d6; margin-bottom:30px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-title-inn{margin-bottom:10px; padding-bottom:10px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-title-inn .dropdown-menu{min-width:120px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-title-inn p{margin:10px 0 0 0;}
+#campaign .campaign-inner .campaign-comment .comment-area textarea{border-radius:2px; margin-bottom:40px; font-size:20px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li{display:block; margin-bottom:10px; padding-bottom:10px; overflow:hidden;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li .user-img{float:left;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li .user-img img{width:74px; height:74px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li .user-text{padding-left:90px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li .user-text h3{font-family: "Myriad Pro Regular"; font-size:17px; color:#3b5998; margin-bottom:5px;}
+#campaign .campaign-inner .campaign-comment .comment-area .comment-list ul li .user-text p{font-size:15px;}
+
+/*Campaign Setting*/
+#campaign-setting{padding:50px 0px;}
+#campaign-setting .main-content-inner{background:#ffffff; padding:20px; border-right: 1px solid rgba(0, 0, 0, 0.13); border-left: 1px solid rgba(0, 0, 0, 0.13);border-bottom: 1px solid rgba(0, 0, 0, 0.13); border-top:5px solid #7ad1ea; border-radius:5px; -moz- border-radius:5px; -webkit- border-radius:5px;}
+.comment-update .edit-section{border:1px solid #dddddd; border-radius:7px; -moz- border-radius:7px; -webkit- border-radius:7px;}
+.comment-update .edit-section .edit-title{background:#f3f9e5; color:#66666b; font-weight:bold; text-transform:uppercase; font-size:15px; padding:10px 20px; border-bottom:1px solid #dddddd; border-top-right-radius:7px; border-top-left-radius:7px;} 
+.comment-update .edit-section .edit-list{padding:0 15px;}
+.comment-update .edit-section .edit-list ul li{display:block;}
+.comment-update .edit-section .edit-list ul li a{display:block; padding:15px 5px; border-bottom:1px dotted #ccc; color:#999999; line-height:29px;}
+.comment-update .edit-section .edit-list ul li.active a{color:#111111;}
+.comment-update .edit-section .edit-list ul li a span{width:40px; text-align:center; margin-right:18px; float:left;}
+.comment-update .edit-section .edit-list ul li a i{color:#dddddd; font-size:21px; line-height:28px;}
+.comment-update .content-sec{border:1px solid #dddddd; border-radius:7px; -moz- border-radius:7px; -webkit- border-radius:7px;}
+.comment-update .content-sec .content-sec-inn{padding:25px; border-bottom:1px solid #dddddd;}
+.comment-update .content-sec .content-sec-inn .title h1{font-size:40px; color:#333333;}
+.comment-update .content-sec .content-sec-inn h3{margin-bottom:15px;}
+.comment-update .content-sec .content-sec-inn .btn.btn-warning{background:#f5a409; width:250px; height:60px; line-height:40px; font-weight:bold; font-size:20px; text-shadow:1px 1px 1px rgba(0,0,0,0.8);}
+.comment-update .content-sec .content-sec-inn.goal{background:#f3f9e4; padding-top:10px; padding-bottom:10px; color:#5f7e19; font-size:100px; font-family: 'Myriad Pro Bold';}
+
+/*Accont Status*/
+.comment-update .content-sec .content-sec-inn.account-status h3{margin-bottom:5px;}
+.comment-update .content-sec .content-sec-inn.account-status p{color:#919191;}
+.comment-update .content-sec .content-sec-inn.account-status ul li a,.comment-update .content-sec .content-sec-inn.account-status ul li{color:#919191; font-size:14px;}
+
+/*--------------------------------------------------------------------------
+							    Sign In
+--------------------------------------------------------------------------*/
+#sign-in{padding:40px 0px; background:#ffffff;}
+#sign-in .sign-in-inner{background:#f6f5f2; border:1px solid #d1d1d1; border-radius:7px; width:440px; margin:0 auto;  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);}
+#sign-in .sign-in-inner .header{text-align:center; border-bottom:1px solid #dddddd;}
+#sign-in .sign-in-inner .header img{margin:20px auto;}
+#sign-in .sign-in-inner .sign-in{background:#ebeff4; padding:20px 15px 30px 15px; border-bottom:1px solid #dddddd; text-align:center;}
+#sign-in .sign-in-inner .sign-in h2{font-size:35px; margin-bottom:30px;}
+#sign-in .sign-in-inner .sign-in .btn.btn-primary{background: #3b5999 none repeat scroll 0 0; border: 1px solid #3b5999; border-radius: 4px; width:80%; height:50px; line-height:30px; font-weight:bold; text-align:left;}
+#sign-in .sign-in-inner .sign-in .btn.btn-primary i {border-right: 1px solid rgba(255, 255, 255, 0.5); margin-right: 10px; padding-right: 15px;}
+#sign-in .sign-in-inner .login-box{background:#f6f5f2; padding:20px 15px 30px 15px; border-bottom-left-radius:7px; border-bottom-right-radius:7px;}
+#sign-in .sign-in-inner .login-box .title-bg{text-align:center; position:relative; background:url(../images/title-bg.png) center 2px no-repeat; margin-bottom:15px;}
+#sign-in .sign-in-inner .login-box label{font-weight:normal; color:#535353;}
+#sign-in .sign-in-inner .login-box button{width:80%; background:#ed9100; height:60px; line-height:40px; clear:both; font-size:22px; margin:0 auto;}
+#sign-in .sign-in-inner .login-box a{color:#737370;}
+#sign-in .sign-in-inner .login-box p.mail{color:#000000;}
+#sign-in .sign-in-inner .login-box p.mail a{color:#000000; text-decoration:underline;}
+
+/*Invite Friend*/
+#sign-in .sign-in-inner .invite-friends{background:#ffffff;}
+#sign-in .sign-in-inner .invite-friends .email-desc{padding:20px 20px 10px 20px; border-bottom:1px solid #dddddd;}
+#sign-in .sign-in-inner .invite-friends .save-buttion{padding:20px;}
+#sign-in .sign-in-inner .invite-friends .save-buttion ul li a{color:#7e7e7e;}
+
+/*--------------------------------------------------------------------------
+							   Sign In Free
+--------------------------------------------------------------------------*/
+#signup-box {padding:40px 0px; background:rgba(0,0,0,0); display:none; left:0; position:absolute; top:0; width:100%; z-index:99999;}
+#signup-box .sign-in-inner{background:#f6f5f2; border:1px solid #d1d1d1; border-radius:12px; width:500px; margin:0 auto; border: 8px solid rgba(51, 51, 51, 0.9); position:relative;}
+#signup-box .sign-in-inner .header{text-align:center; border-bottom:1px solid #dddddd;}
+#signup-box .sign-in-inner .header img{margin:20px auto;}
+#signup-box .sign-in-inner .sign-in{background:#ebeff4; padding:20px 15px 30px 15px; border-bottom:1px solid #dddddd; text-align:center;}
+#signup-box .sign-in-inner .sign-in h2{font-size:35px; margin-bottom:30px;}
+#signup-box .sign-in-inner .sign-in .btn.btn-primary{background:#3b5999 none repeat scroll 0 0; border: 1px solid #3b5999; border-radius: 4px; width:80%; height:50px; line-height:30px; font-weight:bold; text-align:left;}
+#signup-box .sign-in-inner .sign-in .btn.btn-primary i {border-right: 1px solid rgba(255, 255, 255, 0.5); margin-right: 10px; padding-right: 15px;}
+#signup-box .sign-in-inner .sign-in .btn.btn-warning{background:#ed9100 none repeat scroll 0 0; border: 1px solid #ed9100; border-radius: 4px; width:80%; height:50px; line-height:30px; font-weight:bold; text-align:left;}
+#signup-box .sign-in-inner .sign-in .btn.btn-warning i {border-right: 1px solid rgba(255, 255, 255, 0.5); margin-right: 10px; padding-right: 15px;}
+#signup-box .sign-in-inner .login-box{background:#f6f5f2; padding:20px 15px 30px 15px; border-bottom-left-radius:7px; border-bottom-right-radius:7px;}
+#signup-box .sign-in-inner .login-box .title-bg{text-align:center; position:relative; background:url(../images/title-bg.png) center 2px no-repeat; margin-bottom:15px;}
+#signup-box .sign-in-inner .login-box label{font-weight:normal; color:#535353;}
+#signup-box .sign-in-inner .login-box button{width:80%; background:#ed9100; height:60px; line-height:40px; clear:both; font-size:22px; margin:0 auto;}
+#signup-box .sign-in-inner .login-box a{color:#737370;}
+#signup-box .sign-in-overlay{background:rgba(0,0,0,0.6); position:fixed; height:100%; width:100%; left:0; right:0; top:0; bottom:0;  z-index:-99999;}
+.reg-top-content{background:rgba(0,0,0,0);  left:0; position:absolute; top:0; width:100%; z-index:999999; height:100px; display:none;}
+.reg-top-content button{color:#ffffff; text-transform:uppercase; font-weight:bold;}
+
+/*--------------------------------------------------------------------------
+							  Account Confirmation
+--------------------------------------------------------------------------*/
+#account-confirmation{padding:50px 0px; background:#ffffff; min-height:650px;}
+#account-confirmation .acc-confr-inner{border:1px solid #dddddd; border-radius:5px; box-shadow:1px 3px 5px #dddddd;}
+#account-confirmation .acc-confr-inner .main-logo{padding:25px 10px; text-align:center; }
+#account-confirmation .acc-confr-inner .main-logo img{margin:0 auto;}
+#account-confirmation .acc-confr-inner .msg{background:#f2f4f7; padding:30px 0px;}
+#account-confirmation .acc-confr-inner .msg p span{color:#3c70be;}
+#account-confirmation .acc-confr-inner .account-content{padding:40px 30px;}
+#account-confirmation .acc-confr-inner .account-form-cont{padding:40px 10px 30px 50px; border-left:1px solid #dddddd;}
+#account-confirmation .acc-confr-inner .account-form-cont .user-details{ border:1px solid #dddddd; overflow:hidden; margin-bottom:20px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dddddd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+#account-confirmation .acc-confr-inner .account-form-cont .user-details .user-name{float:left; width:75%; text-align:center; padding-top:25px;}
+#account-confirmation .acc-confr-inner .account-form-cont .user-details .user-name p+p{color:#717171; font-weight:normal;}
+#account-confirmation .acc-confr-inner .account-form-cont .user-details .user-photo{width:25%; float:right;}
+
+/*--------------------------------------------------------------------------
+							 Account Veryfication
+--------------------------------------------------------------------------*/
+.accont-veryfication {width:550px !important;}
+.accont-veryfication .header{padding:20px 0px; background:#ffffff; border-top-left-radius:7px; border-top-right-radius:7px;}
+.accont-veryfication .sign-in.msg-detail{background:#f3f9e3 !important; text-align:center;}
+.accont-veryfication .sign-in.msg-detail img{margin:10px auto;}
+.accont-veryfication .sign-in.msg-detail a{color:#919191;}
+.accont-veryfication .login-box{background:#ffffff !important;}
+
+/*--------------------------------------------------------------------------
+						Add Update Fund Campaign
+--------------------------------------------------------------------------*/
+.add-update-fund-campaign .user-update{border:1px solid #dddddd; border-radius:5px; -moz- border-radius:5px; -webkit- border-radius:5px;}
+.add-update-fund-campaign .user-update .user-name{background:#ffffff; padding:25px; border-bottom:1px solid #dddddd;}
+.add-update-fund-campaign .user-update .user-name h1{margin:0; text-align:center;}
+.add-update-fund-campaign .user-update .update-post{background:#f3f9e3; padding:20px 25px; overflow:hidden;}
+.add-update-fund-campaign .user-update .update-post .user{float:left; width:18%; text-align:center;}
+.add-update-fund-campaign .user-update .update-post .user img{margin:0 auto;}
+.add-update-fund-campaign .user-update .update-post .post-details{float:left; width:78%; padding:0% 2%;}
+.choose_file{position:relative; display:inline-block; border-radius:4px; border:#ebebeb solid 1px; width:220px; padding: 4px 6px 4px 8px; color: #44a9dd;   margin-top: 2px; background:white; border:1px solid #dddddd;}
+.choose_file input[type="file"]{-webkit-appearance:none; position:absolute; top:0; left:0; opacity:0; cursor:pointer;}
+.add-update-fund-campaign .user-update .update-post .post-details ul li a{color:#8c8c94; font-size:14px;}
+.add-update-fund-campaign .user-update .update-button{padding:40px 0px; text-align:center; border-top:1px solid #dddddd;}
+.add-update-fund-campaign .user-update .update-button .btn.btn-warning{background:#f5a409; height:60px; line-height:40px; font-size:25px; font-weight:bold;}
+.add-update-fund-campaign .school-renovation{border:1px solid #dddddd; border-radius:5px; -moz- border-radius:5px; -webkit- border-radius:5px;}
+.add-update-fund-campaign .school-renovation .title{background:#f3f9e4; padding:10px 15px; overflow:hidden; border-top-left-radius:5px; border-top-right-radius:5px; border-bottom:1px solid #dddddd;}
+.add-update-fund-campaign .school-renovation .title span{font-weight:bold; color:#333333; float:left;}
+.add-update-fund-campaign .school-renovation .title span+span{float:right;}
+.add-update-fund-campaign .school-renovation .rev-content{padding:20px;}
+.add-update-fund-campaign .school-renovation .rev-content .rev-images img{margin:0 auto; border-radius:8px;}
+.add-update-fund-campaign .school-renovation .rev-content .price-sec {padding:20px 0px;}
+.add-update-fund-campaign .school-renovation .rev-content .price-sec h2{font-size:40px; font-weight:bold; margin:0;}
+.add-update-fund-campaign .school-renovation .rev-content .price-sec span{color:#666666; font-size:18px; font-weight:normal;}
+.add-update-fund-campaign .school-renovation .rev-content .price-sec .link{margin-top:15px; margin-bottom:5px;}
+.add-update-fund-campaign .school-renovation .rev-content .price-sec .link a{font-size:20px; font-weight:bold;}
+.add-update-fund-campaign .school-renovation .rev-content .social-share{padding:10px 0px 10px 0px; border-top:1px solid #dddddd; margin-top:15px;}
+ 
+/*--------------------------------------------------------------------------
+								Campaign List
+--------------------------------------------------------------------------*/ 
+.campaign-list ul li{margin-top:10px; margin-bottom:10px;}
+.campaign-list ul li .capmaign-list-inn{min-height:375px; border:1px solid #d2d2d2; background:#f6f5f2; border-radius:8px; padding:10px;}
+.campaign-list ul li .capmaign-list-inn .icam-mages img{margin:0 auto;}
+.campaign-list ul li .capmaign-list-inn .links ul li a,.campaign-list ul li .capmaign-list-inn .links ul li{color:#9d9d9d;}
+.campaign-list ul li .capmaign-list-inn.add-list{background:#eeeeee; text-align:center; padding-top:40px;}
+.campaign-list ul li .capmaign-list-inn.add-list i{font-size:120px; color:#cccccc; margin-bottom:50px;}
+.about-organize .organizer-inn{padding:10px; border:1px solid #dddddd; border-radius:7px;}
+.about-organize .organizer-inn li{margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #dddddd; overflow:hidden;}
+.about-organize .organizer-inn li img{float:left; margin:0px 10px 5px 0;}
+.dollor-price{padding:10px 25px; background:#fff0d7; overflow:hidden; border-bottom:1px solid #dddddd;}
+.dollor-price .dollor{float:left;}
+.dollor-price .price-dollor{float:right;}
+.dollor-price span{color:#eea000; font-size:90px; font-family: 'Myriad Pro Bold';}
+.dollor-price .label{font-size:15px; color:#a4a4a4; display:block; margin-top:-15px; font-family: 'Myriad Pro Regular';}
+.update-user{padding:20px 25px; border-top:1px solid #dddddd;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
